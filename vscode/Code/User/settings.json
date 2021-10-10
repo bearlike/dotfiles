@@ -1,0 +1,74 @@
+{
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "workbench.editorAssociations": {
+        "*.html": "default",
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "workbench.activityBar.visible": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Jedi",
+    "explorer.confirmDelete": false,
+    "[html]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "files.autoSave": "onFocusChange",
+    "vsicons.dontShowNewVersionMessage": true,
+    "settingsSync.ignoredExtensions": [
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter"
+    ],
+    "markdown.extension.syntax.plainTheme": true,
+    "editor.fontSize": 15,
+    "editor.fontWeight": 400,
+    "editor.fontLigatures": "calt",
+    "terminal.integrated.fontFamily": "monospace",
+    "workbench.colorTheme": "Deepdark Material Theme | Default Version",
+    "workbench.startupEditor": "newUntitledFile",
+    "jupyter.interactiveWindowMode": "perFile",
+    "docker.showStartPage": false,
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "python.showStartPage": false,
+    "gitlab.instanceUrl": "",
+    "java.configuration.runtimes": [],
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "liveshare.presence": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.linux": "",
+    "settingsSync.ignoredSettings": [
+        "editor.fontFamily",
+        "terminal.external.linuxExec",
+        "terminal.integrated.defaultProfile.linux",
+        "terminal.integrated.fontFamily",
+        "terminal.integrated.fontSize",
+        "workbench.preferredDarkColorTheme",
+        "workbench.colorTheme"
+    ],
+    "terminal.external.linuxExec": "/bin/zsh",
+    "terminal.integrated.automationShell.linux": "",
+    "terminal.integrated.allowMnemonics": true,
+    "terminal.integrated.automationShell.windows": "",
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.rulers": [
+        80
+    ],
+    "editor.largeFileOptimizations": false,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "telemetry.telemetryLevel": "off"
+}
