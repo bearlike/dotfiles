@@ -1,0 +1,10 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Krishnakanth Alagiri
+	email = 39209037+bearlike@users.noreply.github.com
+[url "https://"]
+	insteadOf = git://
