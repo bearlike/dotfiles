@@ -28,9 +28,14 @@
     "editor.fontSize": 15,
     "editor.fontWeight": 400,
     "editor.fontLigatures": "calt",
-    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.fontFamily": "\"MesloLGS NF\", monospace",
     "workbench.colorTheme": "Deepdark Material Theme | Default Version",
     "workbench.startupEditor": "newUntitledFile",
+    "remote.SSH.remotePlatform": {
+        "adam.home": "linux",
+        "gemini.home": "linux",
+        "apollo.home": "linux"
+    },
     "jupyter.interactiveWindowMode": "perFile",
     "docker.showStartPage": false,
     "terminal.integrated.sendKeybindingsToShell": true,
@@ -42,7 +47,6 @@
     },
     "python.showStartPage": false,
     "gitlab.instanceUrl": "",
-    "java.configuration.runtimes": [],
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
@@ -59,9 +63,7 @@
         "workbench.colorTheme"
     ],
     "terminal.external.linuxExec": "/bin/zsh",
-    "terminal.integrated.automationShell.linux": "",
     "terminal.integrated.allowMnemonics": true,
-    "terminal.integrated.automationShell.windows": "",
     "redhat.telemetry.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
     "editor.rulers": [
@@ -70,5 +72,11 @@
     "editor.largeFileOptimizations": false,
     "git.autofetch": true,
     "git.enableSmartCommit": true,
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "vscode-edge-devtools.mirrorEdits": true,
+    "vscode-edge-devtools.webhint": false,
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.detectLocale": "on",
+    "terminal.integrated.enableBell": true
 }
