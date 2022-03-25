@@ -53,8 +53,8 @@ source $ZSH/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.alias.sh ]; then
+    . ~/.alias.sh
 fi
 
 # Local and remote sessions
