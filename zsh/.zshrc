@@ -65,3 +65,17 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
 	export EDITOR='gedit'
 fi
+
+# Custom segment for displaying CPU temperature
+function prompt_cpu_temp() {
+	integer cpu_temp="$(</sys/class/thermal/thermal_zone0/temp) / 1000"
+	if (( cpu_temp >= 55 )); then
+		p10k segment -s HOT  -f red    -t "${cpu_temp}"$'\uE339' -i $'\uF737'
+	elif (( cpu_temp >= 50 )); then
+		p10k segment -s WARM -f yellow -t "${cpu_temp}"$'\uE339' -i $'\uF071'
+	elif (( cpu_temp < 50 )); then
+		p10k segment -s OK -f green -t "${cpu_temp}"$'\uE339' -i $'\uF2CB'
+	fi
+}
+
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS+=cpu_temp
