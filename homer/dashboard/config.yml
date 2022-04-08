@@ -1,14 +1,9 @@
----
-# Homepage configuration
-# Homer Project Page - https://github.com/bastienwirtz/homer
-# See https://fontawesome.com/icons for icons options
-
 title: "Dashboard"
-subtitle: "Welcome!"
+subtitle: "Keks Intranet"
 logo: "assets/icons/logo.svg"
-
 header: true
-footer: '<p>Hosted with <span class="has-text-danger">❤️</span> by <a href="https://kanth.tech/">Krishnakanth</a>'
+footer: false
+#footer: '<p>Hosted with <span class="has-text-danger">❤️</span> by <a href="https://kanth.tech/">Krishnakanth</a>'
 
 # Optional theme customization
 theme: default
@@ -26,9 +21,9 @@ colors:
     card-shadow: rgba(0, 0, 0, 0.1)
     link-hover: "#363636"
   dark:
-    highlight-primary: "#3367d6"
-    highlight-secondary: "#4285f4"
-    highlight-hover: "#5a95f5"
+    highlight-primary: "#af3d4e"
+    highlight-secondary: "#7c2b37"
+    highlight-hover: "#491920"
     background: "#131313"
     card-background: "#2b2b2b"
     text: "#eaeaea"
@@ -41,7 +36,7 @@ colors:
 links:
   - name: "bearlike"
     icon: "fab fa-github"
-    url: "https://github.com/bearlike"
+    url: "https://kanth.tech/github"
     target: "_blank" # optional html a tag target attribute
   - name: "Website"
     icon: "fas fa-globe"
@@ -54,35 +49,46 @@ services:
     items:
       - name: "Portainer"
         logo: "assets/tools/portainer.svg"
-        subtitle: "Docker Management"
+        subtitle: "Container Management Tool"
         tag: "remote"
-        url: "http://portainer.home/"
+        url: "https://portainer.adam.home/"
         target: "_blank" # optional html a tag target attribute
+      - name: "Secrets Manager"
+        icon: "fas fa-key"
+        subtitle: "Secret Management Service"
+        tag: "remote"
+        url: "https://secrets.adam.home/api"
+        target: "_blank" # new tab
       - name: "Pi-Hole"
         logo: "assets/tools/pihole.svg"
         subtitle: "DNS sinkhole and Ad-Blocker"
+        url: "https://pi.hole/admin"
+        # type: "PiHole"
+        tag: "local"
+      - name: "NGINX Proxy Manager"
+        logo: "assets/tools/nginx.svg"
+        subtitle: "Proxy and SSL Management"
         tag: "app"
-        url: "http://pi.hole/"
-      - name: "Home Assistant"
-        logo: "assets/tools/homeassistant.svg"
-        subtitle: "Home Automation"
-        tag: "app"
-        url: "http://192.168.1.29:8123/"
-      - name: "qBittorrent"
-        logo: "assets/tools/qbittorrent.svg"
-        subtitle: "BitTorrent client"
-        tag: "downloader"
-        url: "http://torrents.home/"
-      - name: "pyLoad"
-        logo: "assets/tools/pyload.svg"
-        subtitle: "Downloader"
-        tag: "downloader"
-        url: "https://192.168.1.13:631/admin/"
+        url: "https://npm.adam.home/"
+ #     - name: "Home Assistant"
+ #       logo: "assets/tools/homeassistant.svg"
+ #       subtitle: "Home Automation"
+ #       tag: "app"
+ #       url: "http://192.168.1.29:8123/"
+
+  - name: "Printer and Scanner"
+    icon: "fas fa-print"
+    items:
       - name: "CUPS"
         logo: "assets/tools/printer.svg"
-        subtitle: "Printer Server"
+        subtitle: "Printer Server Management Interface"
         tag: "printer"
-        url: "https://192.168.1.13:631/admin/"
+        url: "https://192.168.1.29:631/"
+      - name: "Scanner"
+        logo: "assets/tools/scanner.png"
+        subtitle: "Web Interface for Scanner"
+        tag: "printer"
+        url: "https://scanner.adam.home/"
 
   - name: "Cloud"
     icon: "fas fa-cloud"
@@ -92,18 +98,14 @@ services:
         subtitle: "Personal Cloud"
         tag: "cloud"
         url: "https://cloud.formatlabs.in/"
-      - name: "Jupyter Lab"
-        logo: "assets/tools/jupyter.svg"
-        subtitle: "Jupyter Web Server"
+      - name: "WireGuard"
+        logo: "assets/tools/wireguard.svg"
+        subtitle: "VPN to connect to the intranet"
         tag: "cloud"
-        url: "https://py.formatlabs.in/lab?"
-      - name: "Jellyfin"
-        logo: "assets/tools/jellyfin.svg"
-        subtitle: "Media System"
-        tag: "media"
-        url: "https://mc.formatlabs.in/"
-      - name: "Apache Guacamole"
-        logo: "assets/tools/guacomole.svg"
-        subtitle: "Remote Desktop Solution"
-        tag: "remote"
-        url: "http://guacamole.home/"
+        url: "https://wg.gemini.home/"
+      - name: "Duplicati"
+        logo: "assets/tools/duplicati.png"
+        subtitle: "Secure Backup Manager"
+        tag: "cloud"
+        url: "https://backups.gemini.home/"
+

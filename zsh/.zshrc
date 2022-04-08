@@ -8,7 +8,7 @@ fi
 # Common Variables 
 export LANG=en_US.UTF-8
 export COLORTERM=truecolor
-export ARCHFLAGS="-arch x86_64" # Compilation flags
+# export ARCHFLAGS="-arch x86_64" # Compilation flags
 export PATH=$HOME/bin:/usr/local/bin:/sbin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -31,11 +31,6 @@ bindkey $key[Down] down-line-or-history
 # down-line-or-history: Cycle to next history line.
 # bindkey $key[Control-Space] list-expand
 
-# Set personal aliases
-alias zshconfig="nano ~/.zshrc"
-alias ohmyzsh="nano ~/.oh-my-zsh"
-alias d-c="docker-compose"
-alias cls='clear' # Sometimes I forget I'm not in Windows
 
 # Which plugins would you like to load?
 plugins=(
@@ -53,8 +48,9 @@ source $ZSH/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-if [ -f ~/.alias.sh ]; then
-    . ~/.alias.sh
+# Load Alias file
+if [ -f ~/alias.sh ]; then
+    . ~/alias.sh
 fi
 
 # Local and remote sessions

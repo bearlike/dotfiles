@@ -61,7 +61,7 @@ alias d-kd="docker run -d -P"
 alias d-ki="docker run -i -t -P"
 
 # Execute interactive container, e.g., $dex base /bin/bash
-alias d-ex="docker exec -i -t"
+alias d-ex="docker exec -it"
 
 # Prune all unused Docker objects
 alias d-cl="docker system prune"
