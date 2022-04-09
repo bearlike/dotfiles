@@ -53,6 +53,11 @@ if [ -f ~/alias.sh ]; then
     . ~/alias.sh
 fi
 
+# Load Enviroinment Variable file
+if [ -f ~/env.sh ]; then
+    . ~/env.sh
+fi
+
 # Local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
 	export EDITOR='nano'
