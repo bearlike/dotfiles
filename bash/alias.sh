@@ -8,6 +8,9 @@ alias ohmyzsh="nano ~/.oh-my-zsh"
 alias cls='clear' # Sometimes I forget I'm not in Windows
 alias py='/bin/python3'
 
+: ' Quick hacks '
+view-md() { pandoc "$@" | lynx -stdin }
+
 : ' File Operations Aliases and Functions
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
 file-p-x() { chmod +x "$@"; }
@@ -76,6 +79,8 @@ d-alias() { _guide_alias_ "Docker" "docker" }
 # arg $1 : container name/id
 d-bash() { docker exec -it $1 bash }
 
+d-stats() { docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}" }
+ 
 : ' User aliases ends here. Below are helpers.
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
 # Helper: Text Formatting
